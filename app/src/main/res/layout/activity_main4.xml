@@ -1,0 +1,69 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:background="@color/grey_new"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <!-- Ảnh -->
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="match_parent"
+          android:layout_height="178dp"
+          android:background="@drawable/bovien_anh"
+          android:scaleType="fitXY"
+          android:src="@drawable/anh2" />
+
+      <!-- Tiêu đề của bài viết -->
+      <TextView
+          android:id="@+id/titleTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=" Dừng công tác tìm kiếm diện rộng nạn nhân mất tích do mưa lũ tại Sa Pa"
+          android:layout_gravity="left"
+          android:textSize="21sp"
+          android:textStyle="bold" />
+
+      <!-- Phần chú thích -->
+      <TextView
+          android:id="@+id/infoTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text=" (CLO) Theo thông tin từ Uỷ ban nhân dân (UBND) thị xã Sa Pa, tỉnh Lào Cai, do công tác tìm kiếm gặp nhiều khó khăn, đến thời điểm hiện tại, cơ quan chức năng đã dừng tìm kiếm diện rộng 2 nạn nhân mất tích do lũ quét gây ra."
+          android:textSize="12sp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="------------" />
+
+      <!-- TextView mới với nội dung dài -->
+      <TextView
+          android:id="@+id/longInfoTextView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text=" Theo ông Liễn, vào chiều ngày 18/9, huyện đã cử tổ công tác đến 2 gia đình nhà nạn nhân bị mất tích thông báo dừng tìm kiếm trên diện rộng. \n “Hiện nay, gia đình nạn nhân vẫn đang tìm kiếm. Tuy nhiên, trên địa bàn thị xã Sa Pa vẫn có mưa, lượng nước ở các con sông, suối vẫn cao thế nên công tác tìm kiếm gặp khó khăn”, ông Liễn cho hay. \n  Trước đó, từ đêm ngày 12/9/2023 đến rạng sáng ngày 13/9/2023, trên địa bàn tỉnh Lào Cai đã có mưa vừa, mưa to, một số nơi mưa rất to, đặc biệt là khu vực thị xã Sa Pa, các huyện Bát Xát, Văn Bàn. Mưa lớn kèm theo dông lốc, sạt lở, lũ quét gây ảnh hưởng, thiệt hại nghiêm trọng về người, cơ sở hạ tầng, sản xuất nông nghiệp của nhân dân. \n  Theo báo cáo nhanh của Ban chỉ huy phòng chống thiên tai và tìm kiếm cứu nạn (PCTT va TKCN) tỉnh Lào Cai về tình hình thiệt hại và công tác khắc phục hậu quả do thiên tai gây ra ngày 12 - 13/9 cho biết, đã có 16 người thương vong (6 người chết, 3 người mất tích và 7 người bị thương). \n  Có 24 căn nhà bị ảnh hưởng, trong đó 2 căn nhà bị thiệt hại hoàn toàn; 4 nhà thiệt hại 50-70%; 17 nhà thiệt hại 1 phần dưới 30% và 1 nhà phải di dời khẩn cấp. Ngoài ra có 18 hộ bị ngập cục bộ dưới 1m, 1 hộ sập bếp tạm. \n  Thông tin từ lãnh đạo xã Phìn Ngan, huyện Bát Xát đã giảm số người tìm kiếm diện rộng, nhưng vẫn đang duy trì lực lượng tìm kiếm 20 - 30 người gồm Công an, Quân sự, dân quân tự vệ và lực lượng tại chỗ cùng các xã lân cận đang nỗ lực tìm kiếm nạn nhân bị lũ cuốn trôi. Đến 15h ngày 19/9/2023 vẫn chưa tìm thấy 1 nạn nhân mất tích."
+          android:textSize="16sp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Hà Thành"
+          android:textSize="17sp"
+          android:textStyle="bold"
+          android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+  </RelativeLayout>
+</ScrollView>

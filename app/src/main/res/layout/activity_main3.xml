@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/grey_new"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Ảnh -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:background="@drawable/bovien_anh"
+                android:scaleType="fitXY"
+                android:src="@drawable/anh1" />
+
+            <!-- Tiêu đề của bài viết -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dreadnought"
+                android:layout_gravity="left"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <!-- Phần chú thích -->
+            <TextView
+                android:id="@+id/infoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Dreadnought, tàu chiến chủ lực nổi tiếng, thay đổi hoàn toàn cách xây dựng và thiết kế tàu chiến, tạo ra tiêu chuẩn mới và cuộc cạnh tranh vũ trang. Mặc dù đã nghỉ hưu, tàu này để lại di sản vĩ đại và tầm ảnh hưởng lớn đối với lịch sử hải quân và an ninh thế giới."
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="------------" />
+
+            <!-- TextView mới với nội dung dài -->
+            <TextView
+                android:id="@+id/longInfoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="  Dreadnought, tên gọi chính thức là HMS Dreadnought, là một tàu chiến chủ lực của Hải quân Hoàng gia Anh được đưa vào hoạt động vào đầu thế kỷ 20. Tàu chiến này đã thay đổi toàn bộ cách tiếp cận trong việc xây dựng và thiết kế tàu chiến. Nó được biết đến với việc sử dụng hệ thống động cơ điện hóa và loại vũ khí chính xác, tạo nên một sự kết hợp mạnh mẽ chưa từng thấy trước đó. \n   Với việc xuất hiện của Dreadnought, các tàu chiến cũ trở nên lạc hậu và không còn có khả năng cạnh tranh. Dreadnought đã tạo ra một tiêu chuẩn mới về tàu chiến chủ lực với nhiều khẩu đại bác đồng thời và thiết bị tiên tiến hơn. Điều này đã dẫn đến cuộc cạnh tranh tăng trưởng vũ trang trong thời kỳ trước Thế chiến thứ nhất. \n   Mặc dù Dreadnought đã nghỉ hưu và không còn hoạt động, tàu này để lại một di sản vĩ đại trong lịch sử hải quân. Tầm ảnh hưởng của nó không chỉ giới hạn trong lĩnh vực công nghệ và chiến thuật, mà còn lan rộng đến cả việc thay đổi quan điểm về sự cạnh tranh quốc phòng và an ninh trên toàn thế giới. Dreadnought trở thành một biểu tượng của sự tiến bộ công nghiệp và quân sự của thế kỷ 20."
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

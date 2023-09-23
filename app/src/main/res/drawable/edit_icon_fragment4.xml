@@ -1,0 +1,17 @@
+<!-- circle_background.xml -->
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <!-- Hình tròn màu trắng -->
+    <item>
+        <shape
+            android:shape="oval">
+            <solid android:color="#FFFFFF" /> <!-- Màu trắng -->
+        </shape>
+    </item>
+    <!-- Tấm ảnh (icon) -->
+    <item
+        android:drawable="@drawable/revision_frag4" /> <!-- Thay "your_icon" bằng tên tấm ảnh của bạn -->
+        android:gravity="center"
+        android:scaleType="fitCenter" /> <!-- Chỉnh scaleType thành "fitCenter" để thu nhỏ tấm ảnh lại -->
+</layer-list>
