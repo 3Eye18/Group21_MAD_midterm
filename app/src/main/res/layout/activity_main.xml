@@ -1,54 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/my_secondary">
 
-    <ImageView
-        android:id="@+id/myImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/welcome"
-        tools:ignore="MissingConstraints"
-        android:contentDescription="background" />
-
-    <RelativeLayout
-        android:id="@+id/linearLayout"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="wrap_content"
+        android:text="Top Read"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/app_title"/>
 
-        <TextView
-            android:id="@+id/myTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_marginLeft="38dp"
-            android:layout_marginTop="155dp"
-            android:gravity="start"
-            android:text="Hello \nWelcome \nto wikipedia"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:layout_marginStart="38dp" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:id="@+id/horizontal_button">
 
-        <TextView
-            android:layout_width="300dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="38dp"
-            android:layout_marginTop="360dp"
-            android:text="The head and soul of Wikipedia is a community of people working to bring you unlimited access to free, reliable and neutral information"
-            tools:ignore="MissingConstraints"
-            android:layout_marginStart="38dp" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Get Started"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="450dp"/>
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:queryHint="search news"
+                android:layout_gravity="center"
+                android:id="@+id/search_view"/>
 
-    </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:layout_margin="6dp"
+                android:id="@+id/button_1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technology"
+                android:layout_margin="6dp"
+                android:id="@+id/button_2"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:layout_margin="6dp"
+                android:id="@+id/button_3"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:layout_margin="6dp"
+                android:id="@+id/button_4"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports"
+                android:layout_margin="6dp"
+                android:id="@+id/button_5"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entertainment"
+                android:layout_margin="6dp"
+                android:id="@+id/button_6"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:layout_margin="6dp"
+                android:id="@+id/button_7"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:layout_marginTop="15dp"
+        android:color="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"/>
+
+
+</LinearLayout>

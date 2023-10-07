@@ -1,4 +1,4 @@
-package vn.edu.usth.wikipediaclient;
+package vn.edu.usth.appmobile;
 
 import org.junit.Test;
 

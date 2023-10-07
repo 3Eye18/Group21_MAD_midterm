@@ -1,14 +1,3 @@
 <resources>
-    <string name="app_name">Wikipedia Client</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tablayout_cho_chuyen_giao_tab">tablayout cho chuyen giao tab</string>
-    <string name="what_you_have_n_to_know">What you have \n to know !</string>
-    <string name="search_wikipedia">Search wikipedia...</string>
-    <string name="search">Search</string>
-    <string name="what_you_have_to_know">What you have to know ?</string>
-    <string name="item2">Item2</string>
-    <string name="item3">Item3</string>
-    <string name="item4">Item4</string>
-    <string name="item1">Item1</string>
+    <string name="app_name">AppMobile</string>
 </resources>

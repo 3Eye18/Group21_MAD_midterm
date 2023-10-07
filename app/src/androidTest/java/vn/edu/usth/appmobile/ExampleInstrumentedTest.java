@@ -1,4 +1,4 @@
-package vn.edu.usth.wikipediaclient;
+package vn.edu.usth.appmobile;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("vn.edu.usth.wikipediaclient", appContext.getPackageName());
+        assertEquals("vn.edu.usth.appmobile", appContext.getPackageName());
     }
 }
